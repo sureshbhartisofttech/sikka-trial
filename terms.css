@@ -1,0 +1,157 @@
+/* Terms of Service Specific Styles */
+.terms-section {
+  padding: 8rem 0 4rem;
+  background: var(--dark-navy);
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.terms-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.terms-header p {
+  color: var(--grey-400);
+  font-size: 1.1rem;
+}
+
+.terms-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.terms-toc {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 16px;
+  position: sticky;
+  top: 100px;
+  border: 1px solid rgba(84, 194, 85, 0.1);
+}
+
+.terms-toc h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.terms-toc ul {
+  list-style: none;
+}
+
+.terms-toc li {
+  margin-bottom: 0.8rem;
+}
+
+.terms-toc a {
+  color: var(--grey-400);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 0.5rem 0;
+  border-left: 2px solid transparent;
+  padding-left: 1rem;
+}
+
+.terms-toc a:hover {
+  color: var(--primary-green);
+  border-left-color: var(--primary-green);
+  transform: translateX(5px);
+}
+
+.terms-sections {
+  background: var(--surface);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(84, 194, 85, 0.1);
+}
+
+.terms-section-item {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(84, 194, 85, 0.1);
+}
+
+.terms-section-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.terms-section-item h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.terms-section-item p {
+  color: var(--grey-400);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.terms-section-item ul {
+  color: var(--grey-400);
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.terms-section-item li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .terms-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .terms-toc {
+    position: relative;
+    top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-section {
+    padding: 6rem 0 3rem;
+  }
+  
+  .terms-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .terms-sections {
+    padding: 2rem;
+  }
+  
+  .terms-section-item h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-header h1 {
+    font-size: 2rem;
+  }
+  
+  .terms-sections {
+    padding: 1.5rem;
+  }
+  
+  .terms-section-item h2 {
+    font-size: 1.3rem;
+  }
+}

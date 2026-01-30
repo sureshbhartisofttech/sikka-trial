@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sikkaa Exchange - Trade Crypto Confidently</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    SIKKAA
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#how-it-works">How It Works</a></li> -->
+                    <li><a href="sikka-sip.html">SIKKA SIP</a></li>
+                    <li><a href="sikka-learn.html">SIKKA LEARN</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#">
+                            Download Beta App
+                            <i data-lucide="download" style="padding-top: 8px;"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <a href="#waitlist" class="cta-button" onclick="joinWaitlist()">Join Waitlist</a>
+
+                <button class="mobile-menu-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text slide-in-left">
+                    <h1>Trade Crypto Confidently With Sikkaa Exchange</h1>
+                    <p>Buy, sell, and trade 20+ cryptocurrencies using advanced analytics and top-tier security. Start
+                        your crypto journey with India's most trusted exchange.</p>
+
+                    <div class="hero-buttons">
+                        <a href="#waitlist" class="btn-primary" onclick="joinWaitlist()">
+                            <i data-lucide="rocket"></i>
+                            Join the Waitlist
+                        </a>
+                        <a href="#features" class="btn-secondary">
+                            <i data-lucide="play-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual slide-in-right">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <!-- Status Bar -->
+                                <div class="status-bar">
+                                    <span class="time">9:41</span>
+                                    <div class="status-icons">
+                                        <i data-lucide="signal" class="status-icon"></i>
+                                        <i data-lucide="wifi" class="status-icon"></i>
+                                        <i data-lucide="battery" class="status-icon"></i>
+                                    </div>
+                                </div>
+
+                                <!-- App Header -->
+                                <div class="app-header">
+                                    <div class="app-logo">
+                                        <i data-lucide="trending-up"></i>
+                                        <span>Sikkaa</span>
+                                    </div>
+                                    <div class="header-actions">
+                                        <i data-lucide="bell" class="header-icon"></i>
+                                        <i data-lucide="user" class="header-icon"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Portfolio Balance -->
+                                <div class="portfolio-section">
+                                    <div class="balance-label">Total Portfolio</div>
+                                    <div class="balance-amount">₹8,50,000</div>
+                                    <div class="balance-change positive">
+                                        <i data-lucide="trending-up"></i>
+                                        +12.5% (₹94,500)
+                                    </div>
+                                </div>
+
+                                <!-- Quick Actions -->
+                                <div class="quick-actions">
+                                    <div class="action-btn">
+                                        <i data-lucide="arrow-down-circle"></i>
+                                        <span>Buy</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <i data-lucide="arrow-up-circle"></i>
+                                        <span>Sell</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <i data-lucide="repeat"></i>
+                                        <span>Trade</span>
+                                    </div>
+                                    <div class="action-btn">
+                                        <i data-lucide="send"></i>
+                                        <span>Send</span>
+                                    </div>
+                                </div>
+
+                                <!-- Crypto List -->
+                                <div class="crypto-list">
+                                    <div class="crypto-item">
+                                        <div class="crypto-info">
+                                            <div class="crypto-icon btc">₿</div>
+                                            <div class="crypto-details">
+                                                <div class="crypto-name">Bitcoin</div>
+                                                <div class="crypto-symbol">BTC</div>
+                                            </div>
+                                        </div>
+                                        <div class="crypto-price-info">
+                                            <div class="crypto-price">₹42,00,000</div>
+                                            <div class="crypto-change positive">+2.5%</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="crypto-item">
+                                        <div class="crypto-info">
+                                            <div class="crypto-icon eth">Ξ</div>
+                                            <div class="crypto-details">
+                                                <div class="crypto-name">Ethereum</div>
+                                                <div class="crypto-symbol">ETH</div>
+                                            </div>
+                                        </div>
+                                        <div class="crypto-price-info">
+                                            <div class="crypto-price">₹2,80,000</div>
+                                            <div class="crypto-change negative">-1.2%</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="crypto-item">
+                                        <div class="crypto-info">
+                                            <div class="crypto-icon sol">◎</div>
+                                            <div class="crypto-details">
+                                                <div class="crypto-name">Solana</div>
+                                                <div class="crypto-symbol">SOL</div>
+                                            </div>
+                                        </div>
+                                        <div class="crypto-price-info">
+                                            <div class="crypto-price">₹18,500</div>
+                                            <div class="crypto-change positive">+5.8%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Elements -->
+                        <div class="floating-element security-badge">
+                            <i data-lucide="shield-check"></i>
+                            <span>Bank-Grade Security</span>
+                        </div>
+
+                        <div class="floating-element stats-card">
+                            <div class="stat">
+                                <div class="stat-value">20+</div>
+                                <div class="stat-label">Coins</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">0.1%</div>
+                                <div class="stat-label">Fees</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <div class="trust-banner">
+        <div class="container">
+            <p><i data-lucide="shield-check"></i> Compliant with Indian AML regulations. Registered with the FIU.
+                Security and privacy as global best practice.</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Sikkaa Exchange?</h2>
+                <p>Experience the future of crypto trading with our comprehensive suite of features designed for Indian
+                    traders.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Spot Trading</h3>
+                    <p>Trade instantly with deep liquidity and India's lowest fees. Access real-time market data and
+                        execute trades in milliseconds with our advanced trading engine.</p>
+                </div>
+
+                <div class="feature-card fade-in coming-soon">
+                    <!-- <div class="coming-soon-badge">
+                        <i data-lucide="calendar"></i>
+                        <span>Coming Soon</span>
+                    </div> -->
+                    <div class="feature-icon">
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <h3>Buy & Sell Coins</h3>
+                    <p>Purchase and cash out digital coins, connected directly to your Indian bank account for easy
+                        deposits. Seamless INR integration with instant settlements.</p>
+                </div>
+                <div class="feature-card fade-in coming-soon">
+                    <!-- <div class="coming-soon-badge">
+                        <i data-lucide="calendar"></i>
+                        <span>Coming Soon</span>
+                    </div> -->
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Fast Registration</h3>
+                    <p>Complete KYC in minutes and start trading today. Our streamlined onboarding process gets you
+                        trading in no time.</p>
+                </div>
+
+                <div class="feature-card fade-in coming-soon">
+                    <div class="coming-soon-badge">
+                        <i data-lucide="calendar"></i>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div class="feature-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3>Options & Futures</h3>
+                    <p>Powerful derivatives tools with high leverage and transparent pricing. Advanced risk management
+                        features for professional traders.</p>
+                </div>
+
+                <div class="feature-card fade-in coming-soon">
+                    <div class="coming-soon-badge">
+                        <i data-lucide="calendar"></i>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>P2P Exchange</h3>
+                    <p>Peer-to-peer crypto trading with safe escrow and multiple payment methods. Trade directly with
+                        other users with complete security.</p>
+                </div>
+
+                <div class="feature-card fade-in coming-soon">
+                    <div class="coming-soon-badge">
+                        <i data-lucide="calendar"></i>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>ISO & SOC Certified Security</h3>
+                    <p>Multilevel encryption, insured custody, and frequent cybersecurity tests. Your assets are
+                        protected by bank-grade security infrastructure.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h2>Welcome to Sikkaa Exchange</h2>
+                    <p>Sikkaa Exchange is India’s newest crypto trading platform, built for secure, fast, and
+                        accessible investment. We bring liquidity from top global networks, offering the best
+                        prices and fast execution for every trade.</p>
+
+                    <p>Our commitment: making crypto
+                        mainstream with industry-leading security and regulatory compliance like ISO
+                        certification and AML registration.</p>
+
+                    <a href="#contact" class="btn-primary">
+                        <i data-lucide="arrow-right"></i>
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="slide-in-right">
+                    <h3 style="text-align: center; margin-bottom: 2rem; color: var(--white);">Meet Our Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-avatar">SA</div>
+                            <h4>Shinde Atharva</h4>
+                            <p>COO - Experienced in Product Development and developing Growth Strategies</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">ST</div>
+                            <h4>Sonar Tushar</h4>
+                            <p>CEO - Expertise in Stock Markets and Crypto currency since last 10 years</p>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-avatar">BP</div>
+                            <h4>Barade Pranav</h4>
+                            <p>CMO - Highly experienced in creating unique marketing campaigns and content creation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>How It Works</h2>
+                <p>Get started with Sikkaa Exchange in three simple steps</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Complete KYC in Minutes</h3>
+                    <p>Quick and secure identity verification process. Upload your documents and get verified instantly
+                        with our AI-powered KYC system.</p>
+                </div>
+
+                <div class="step-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Link Your Bank Account</h3>
+                    <p>Connect your Indian bank account and deposit funds securely. Instant INR deposits and withdrawals
+                        with zero hassle.</p>
+                </div>
+
+                <div class="step-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Start Trading</h3>
+                    <p>Trade, buy, or sell 20+ cryptos—spot, futures, options, or P2P—all at the tap of a button. Start
+                        trading today.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about Sikkaa Exchange</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Is crypto legal in India?
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, trading and investing in crypto is legal in India, though it's not legal tender. Sikkaa
+                            Exchange is fully compliant and secure, registered with official bodies and follows all
+                            regulatory requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        How do I start buying crypto?
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Download our app, complete KYC verification, deposit INR through your bank account, and start
+                            trading today. The entire process takes less than 10 minutes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        Why choose Sikkaa Exchange?
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We connect you to the best pricing with pooled liquidity, compliant security, and robust
+                            charting tools. Our fees are competitive, and our platform is designed specifically for
+                            Indian traders and investors with local payment methods and support.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        What security measures do you have?
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We employ ISO & SOC certified security with multilevel encryption, insured custody, regular
+                            security audits, and 24/7 monitoring. Your assets are protected by bank-grade security
+                            infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        What are your trading fees?
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer India's lowest trading fees starting from 0.1% for spot trading. Fees decrease with
+                            higher trading volumes, and we offer zero fees for makers in certain trading pairs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info slide-in-left">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about Sikkaa Exchange? Our team is here to help you get started on your crypto
+                        journey.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4>Email Support</h4>
+                                <p>support@sikkaaexchange.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="ticket"></i>
+                            </div>
+                            <div>
+                                <h4>Raise a Ticket</h4>
+                                <p>Get priority support through our ticketing system</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Round-the-clock assistance for all your queries</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-lucide="send"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                    </div> -->
+                </div>
+
+                <div class="contact-form slide-in-right">
+                    <form onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%;">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Center Section -->
+    <section id="help-center" class="help-center">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Help Center</h2>
+                <p>Find answers to common questions and get the support you need</p>
+            </div>
+
+            <div class="help-categories">
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="play-circle"></i>
+                        </div>
+                        <h3>Getting Started</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What is Sikkaa Exchange?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Sikkaa Exchange is a cryptocurrency trading platform that supports spot, futures,
+                                    options, and P2P trading for over 350 digital assets. It offers seamless INR
+                                    integration, bank-level security, and is compliant with Indian regulations.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Is crypto trading legal in India?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, trading crypto is legal in India (though cryptocurrencies are not legal tender).
+                                    Sikkaa Exchange operates fully within regulatory frameworks, adheres to AML/KYC
+                                    guidelines, and is registered appropriately.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do I sign up?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>1. Download the app (or access the web portal)<br>2. Register with your
+                                    email/phone<br>3.
+                                    Complete KYC verification (upload identity/address documents)<br>4. Link your bank
+                                    account & deposit INR<br>5. Start trading (minimum deposit/trade limit may apply)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How long does KYC verification take?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>KYC is usually processed in minutes (if documents are in order). Under some
+                                    circumstances
+                                    (manual review, national holidays, high volumes), it may take up to 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="user-check"></i>
+                        </div>
+                        <h3>Account & KYC</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What documents are accepted for KYC?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Government-issued ID (Aadhaar, Passport, Driver's License) + proof of address
+                                    (utility
+                                    bill, bank statement, etc.). Documents must be valid and clear.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Can I change my registered email/phone?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes — but for security, changes may require identity verification and may take some
+                                    processing time. Contact support for assistance.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What do I do if I forget my password?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Use "Forgot Password" link. We'll send a password reset link to your registered email
+                                    after identity verification.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Is two-factor authentication (2FA) available?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we highly recommend enabling 2FA (via Google Authenticator, SMS, or Authy) to
+                                    secure
+                                    your account further.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="credit-card"></i>
+                        </div>
+                        <h3>Deposits & Withdrawals</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do I deposit INR/fiat?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Link your Indian bank account, then initiate a deposit via NEFT/IMPS/UPI/bank
+                                    transfer
+                                    (depending on supported methods). Funds will reflect in your account per the payment
+                                    method's processing time.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do I withdraw INR/fiat?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Go to Withdrawals, enter the amount and destination bank account (must match your
+                                    verified bank), confirm, and the funds will be transferred (processing times vary).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do I deposit crypto?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>From your wallet, copy the deposit address for the relevant token on Sikkaa. Send the
+                                    crypto to that address. Ensure you use the correct network (e.g., ERC-20, BEP-20,
+                                    etc.).
+                                    Do not send unsupported tokens or networks.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What are the minimum/maximum limits for deposit/withdrawal?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Limits may vary based on verification status and account tier.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3>Trading (Spot, Futures, Options, P2P)</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What trading types do you support?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Spot trading, Futures, Options, and P2P trading.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do I place a spot trade?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Select the trading pair (e.g. BTC/INR), select order type (market, limit,
+                                    stop-limit),
+                                    enter amount, and execute the trade.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What is P2P trading?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>P2P (peer-to-peer) lets you trade directly with other users using escrow. You place
+                                    buy
+                                    or sell orders, set acceptable payment methods, and once payment is confirmed, funds
+                                    are
+                                    released from escrow.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do I cancel an order?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>For open (unfilled) limit orders, go to "Open Orders" and click Cancel. Market orders
+                                    execute immediately and cannot be canceled.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="dollar-sign"></i>
+                        </div>
+                        <h3>Fees & Limits</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What fees do you charge?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We charge a base maker/taker fee starting from 0.1% per trade. Higher-volume accounts
+                                    may
+                                    receive discounted rates or maker rebates.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Are there deposit/withdrawal fees?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>INR fiat deposits and withdrawals may incur nominal bank/processing charges (or be
+                                    free
+                                    depending on method). Crypto network fees apply for withdrawals (pass-through).</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Are there limits on trading volume/daily limits?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes — new accounts may have lower trading/withdrawal limits. After completing full
+                                    verification and maintaining activity, limits may be increased (e.g. ₹2 lakhs per
+                                    day,
+                                    etc.).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Security & Compliance</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What security measures do you use?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Multi-level encryption, Hardware Security Modules (HSMs), ISO/SOC certification,
+                                    Routine
+                                    security audits, penetration testing, 24/7 monitoring & alerts, Insurance
+                                    coverage,Secure API infrastructure,Regular vulnerability assessments.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                How do you handle AML/KYC compliance?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We perform identity verification for all users, monitor transactions for suspicious
+                                    activity, maintain transaction logs, and comply with Indian AML/FIU/regulatory
+                                    guidelines.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What should I do if I suspect unauthorized transactions?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Immediately contact support, disable login/withdrawals (if possible), change your
+                                    password and 2FA, and provide transaction details to help us investigate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <h3>Troubleshooting / Errors</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Why is my deposit not reflecting?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Depending on the payment method, funds may take some time (e.g. bank transfer
+                                    delays).
+                                    Check: Did you send from a verified bank account? Was the memo/reference included?
+                                    Has
+                                    the network confirmed the transaction? If delay exceeds expected window, contact
+                                    support
+                                    with transaction ID, screenshot, etc.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Why did my withdrawal fail?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Possible causes: insufficient balance, mismatching address, network congestion, or
+                                    security verification failed. Check your wallet address, try again, or contact
+                                    support
+                                    with error logs.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Why is my order not filling/partially filling?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Possible reasons: low liquidity, price gaps, your price too far from market, or
+                                    slippage.
+                                    Use limit or market orders accordingly.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                I didn't receive my 2FA code/email. What do I do?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Ensure your email/phone is correctly registered and working. Check spam/promotions
+                                    folder. If still not received, contact support for manual assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <h3>Legal & Policies</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What are your Terms of Service/User Agreement?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our Terms of Service outline user responsibilities, platform usage guidelines, and
+                                    legal
+                                    obligations. Users must comply with laws and may be liable for losses. <a
+                                        href="terms.html"
+                                        style="color: var(--primary); text-decoration: underline;">Read
+                                        full Terms</a></p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                What is your Privacy Policy?
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our Privacy Policy details data collection, usage, rights, sharing, and retention
+                                    practices. <a href="privacy.html"
+                                        style="color: var(--primary); text-decoration: underline;">Read Privacy
+                                        Policy</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Risk Disclosure
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Cryptocurrency trading involves volatility and risk. Losses are possible. Please
+                                    trade
+                                    responsibly and only invest what you can afford to lose.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-category fade-in">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i data-lucide="headphones"></i>
+                        </div>
+                        <h3>Contact & Support Options</h3>
+                    </div>
+                    <div class="help-items">
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Email Support
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>support@sikkaaexchange.com (24/7 response)</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Raise a Ticket
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Get priority support through our ticketing system for complex issues</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                24/7 Support
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Round-the-clock assistance for all your queries and technical issues</p>
+                            </div>
+                        </div>
+                        <div class="faq-item help-item">
+                            <button class="faq-question">
+                                Social & Community
+                                <i data-lucide="chevron-down" class="faq-icon"></i>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Follow us on Telegram, Twitter, and other social platforms for updates and community
+                                    support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-search fade-in">
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search help articles..." id="helpSearch">
+                </div>
+                <p>Can't find what you're looking for? <a href="#contact"
+                        style="color: var(--primary); text-decoration: underline;">Contact our support team</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation Section -->
+    <!-- <section id="api-docs" class="api-docs">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>API Documentation</h2>
+                <p>Integrate with Sikkaa Exchange using our comprehensive REST API and WebSocket feeds</p>
+            </div>
+            
+            <div class="api-overview fade-in">
+                <div class="api-intro">
+                    <h3>Introduction & Overview</h3>
+                    <p>The Sikkaa Exchange API provides programmatic access to trading, market data, account management, and wallet operations. Our API is designed for developers, trading bots, and institutional partners.</p>
+                    
+                    <div class="api-details">
+                        <div class="api-detail-item">
+                            <h4>Base URL</h4>
+                            <code>https://api.sikkaaexchange.com</code>
+                        </div>
+                        <div class="api-detail-item">
+                            <h4>Current Version</h4>
+                            <code>v1</code>
+                        </div>
+                        <div class="api-detail-item">
+                            <h4>Rate Limit</h4>
+                            <code>120 requests/minute</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="api-sections">
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="key"></i>
+                        </div>
+                        <h3>Authentication & Security</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-item">
+                            <h4>API Key Generation</h4>
+                            <p>Generate API keys from your account dashboard with specific permissions (read, trade, withdraw).</p>
+                            <div class="code-block">
+                                <code>
+X-API-Key: your_api_key<br>
+X-API-Secret: your_api_secret<br>
+X-Timestamp: 1640995200000<br>
+X-Signature: hmac_sha256_signature
+                                </code>
+                            </div>
+                        </div>
+                        <div class="api-item">
+                            <h4>HMAC Signature</h4>
+                            <p>All private endpoints require HMAC-SHA256 signature using your API secret.</p>
+                            <div class="code-block">
+                                <code>signature = HMAC-SHA256(timestamp + method + path + body, api_secret)</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <h3>Market Data (Public)</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/markets</div>
+                                <div class="endpoint-desc">Get all available trading pairs</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/ticker?symbol=BTC/INR</div>
+                                <div class="endpoint-desc">Get 24hr ticker statistics</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/orderbook?symbol=BTC/INR&limit=50</div>
+                                <div class="endpoint-desc">Get order book depth</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/trades?symbol=BTC/INR&limit=100</div>
+                                <div class="endpoint-desc">Get recent trades</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="wallet"></i>
+                        </div>
+                        <h3>Account & Wallet</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/account/info</div>
+                                <div class="endpoint-desc">Get account information</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/balance</div>
+                                <div class="endpoint-desc">Get account balances</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method post">POST</div>
+                                <div class="endpoint-path">/api/v1/deposit/crypto</div>
+                                <div class="endpoint-desc">Generate crypto deposit address</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/deposit/history</div>
+                                <div class="endpoint-desc">Get deposit history</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method post">POST</div>
+                                <div class="endpoint-path">/api/v1/withdraw/crypto</div>
+                                <div class="endpoint-desc">Withdraw cryptocurrency</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3>Trading</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method post">POST</div>
+                                <div class="endpoint-path">/api/v1/order</div>
+                                <div class="endpoint-desc">Place new order (market, limit, stop)</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method delete">DELETE</div>
+                                <div class="endpoint-path">/api/v1/order/{orderId}</div>
+                                <div class="endpoint-desc">Cancel existing order</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/order/status/{orderId}</div>
+                                <div class="endpoint-desc">Get order status</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/orders/open</div>
+                                <div class="endpoint-desc">Get open orders</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/orders/history</div>
+                                <div class="endpoint-desc">Get order history</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3>P2P Trading</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/p2p/offers</div>
+                                <div class="endpoint-desc">Get available P2P offers</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method post">POST</div>
+                                <div class="endpoint-path">/api/v1/p2p/order</div>
+                                <div class="endpoint-desc">Create P2P order</div>
+                            </div>
+                        </div>
+                        <div class="api-endpoint">
+                            <div class="api-endpoint-header">
+                                <div class="endpoint-method get">GET</div>
+                                <div class="endpoint-path">/api/v1/p2p/order/status/{orderId}</div>
+                                <div class="endpoint-desc">Get P2P order status</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>WebSocket Streams</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-item">
+                            <h4>Real-time Market Data</h4>
+                            <p>Subscribe to live price feeds, order book updates, and trade streams.</p>
+                            <div class="code-block">
+                                <code>
+wss://ws.sikkaaexchange.com/v1/stream<br>
+// Subscribe to ticker<br>
+{"method": "subscribe", "params": ["ticker.BTC/INR"]}
+                                </code>
+                            </div>
+                        </div>
+                        <div class="api-item">
+                            <h4>Private Streams</h4>
+                            <p>Get real-time updates for your orders, trades, and balance changes.</p>
+                            <div class="code-block">
+                                <code>
+// Subscribe to user orders<br>
+{"method": "subscribe", "params": ["user.orders"], "auth": "api_key"}
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="alert-circle"></i>
+                        </div>
+                        <h3>Error Handling</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="api-item">
+                            <h4>Standard Error Format</h4>
+                            <div class="code-block">
+                                <code>
+{<br>
+&nbsp;&nbsp;"error": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"code": 1001,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"message": "Invalid API key",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"details": "API key not found or expired"<br>
+&nbsp;&nbsp;}<br>
+}
+                                </code>
+                            </div>
+                        </div>
+                        <div class="api-item">
+                            <h4>Common Error Codes</h4>
+                            <div class="error-codes">
+                                <div class="error-code">
+                                    <span class="code">401</span>
+                                    <span class="desc">Unauthorized - Invalid API credentials</span>
+                                </div>
+                                <div class="error-code">
+                                    <span class="code">429</span>
+                                    <span class="desc">Too Many Requests - Rate limit exceeded</span>
+                                </div>
+                                <div class="error-code">
+                                    <span class="code">400</span>
+                                    <span class="desc">Bad Request - Invalid parameters</span>
+                                </div>
+                                <div class="error-code">
+                                    <span class="code">403</span>
+                                    <span class="desc">Forbidden - Insufficient permissions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="api-section fade-in">
+                    <div class="api-section-header">
+                        <div class="api-section-icon">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <h3>Security Best Practices</h3>
+                    </div>
+                    <div class="api-content">
+                        <div class="security-item">
+                            <h4>🔐 API Key Security</h4>
+                            <p>Store API keys securely, never expose them in client-side code or public repositories.</p>
+                        </div>
+                        <div class="security-item">
+                            <h4>🌐 IP Whitelisting</h4>
+                            <p>Restrict API access to specific IP addresses for enhanced security.</p>
+                        </div>
+                        <div class="security-item">
+                            <h4>🔑 Least Privilege</h4>
+                            <p>Only grant necessary permissions (read, trade, withdraw) to API keys.</p>
+                        </div>
+                        <div class="security-item">
+                            <h4>⏰ Timestamp Validation</h4>
+                            <p>Use current timestamps and implement replay attack protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="api-resources fade-in">
+                <h3>Developer Resources</h3>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h4>Code Examples</h4>
+                        <p>Sample implementations in Python, JavaScript, and other languages</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i data-lucide="book"></i>
+                        </div>
+                        <h4>API Reference</h4>
+                        <p>Complete endpoint documentation with request/response examples</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <h4>Developer Support</h4>
+                        <p>Get help from our technical team via dedicated developer channels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SIKKAA EXCHANGE</h3>
+                    <p>India's most trusted cryptocurrency exchange platform. Trade with confidence, security, and the
+                        lowest fees in the market.</p>
+                    <!-- <p><strong>CRYPEXCH TECHNOLOGIES PRIVATE LIMITED</strong></p> -->
+                    <div class="social-links">
+                        <a href="http://www.youtube.com/@SikkaaLearn1" class="social-link">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="https://x.com/SikkaaExchange" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sikkaa-exchange-62156a382/" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sikkaa_exchange/?igsh=ZGloY3psbDNjcno%3D#"
+                            class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#help-center">Help Center</a></li>
+                        <!-- <li><a href="#api-docs">API Documentation</a></li> -->
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="aml-policy.html">AML Policy</a></li>
+                        <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+                        <li><a href="refund-policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkaa Exchange. All rights reserved. | Cryptocurrency trading involves risk. Please
+                    trade responsibly.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="./main.js"></script> -->
+    <script type="module" src="/main.js"></script>
+
+
+</body>
+
+</html>

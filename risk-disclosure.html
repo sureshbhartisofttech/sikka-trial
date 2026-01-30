@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risk Disclosure - Sikkaa Exchange</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="terms.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    SIKKAA
+                </a>
+                
+                <a href="index.html" class="btn-secondary">
+                    <i data-lucide="arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Risk Disclosure Content -->
+    <section class="terms-section">
+        <div class="container">
+            <div class="terms-header">
+                <h1>Risk Disclosure</h1>
+                <p>Last Updated: June 15, 2025</p>
+            </div>
+            
+            <div class="terms-content">
+                <div class="terms-toc">
+                    <h3>Table of Contents</h3>
+                    <ul>
+                        <li><a href="#market-risk">1. Market Risk</a></li>
+                        <li><a href="#liquidity-risk">2. Liquidity Risk</a></li>
+                        <li><a href="#custody-security">3. Custody & Security Risk</a></li>
+                        <li><a href="#regulatory-risk">4. Regulatory Risk</a></li>
+                        <li><a href="#technology-risk">5. Technology Risk</a></li>
+                        <li><a href="#no-investment-advice">6. No Investment Advice</a></li>
+                    </ul>
+                </div>
+                
+                <div class="terms-sections">
+                    <section id="market-risk" class="terms-section-item">
+                        <h2>1. Market Risk</h2>
+                        <p>Crypto assets are highly volatile.</p>
+                    </section>
+                    
+                    <section id="liquidity-risk" class="terms-section-item">
+                        <h2>2. Liquidity Risk</h2>
+                        <p>Some tokens may have low liquidity.</p>
+                    </section>
+                    
+                    <section id="custody-security" class="terms-section-item">
+                        <h2>3. Custody & Security Risk</h2>
+                        <p>Crypto storage carries hacking and theft risks.</p>
+                    </section>
+                    
+                    <section id="regulatory-risk" class="terms-section-item">
+                        <h2>4. Regulatory Risk</h2>
+                        <p>Government regulations may change.</p>
+                    </section>
+                    
+                    <section id="technology-risk" class="terms-section-item">
+                        <h2>5. Technology Risk</h2>
+                        <p>Smart contract bugs, downtime may impact services.</p>
+                    </section>
+                    
+                    <section id="no-investment-advice" class="terms-section-item">
+                        <h2>6. No Investment Advice</h2>
+                        <p>Sikkaa Exchange does not provide financial advice.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sikkaa Exchange. All rights reserved. | Cryptocurrency trading involves risk. Please trade responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Smooth scrolling for anchor links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
